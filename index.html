@@ -1,0 +1,544 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>FARMA DORSCH · Plan Black Friday 2026</title>
+<style>
+:root{
+  --paper:#FFFFFF; --soft:#F6F2EE; --line:#E4DCD3; --ink:#14191F; --muted:#5A5148;
+  --red:#C5282F; --red-ink:#FFFFFF; --mint:#DDEAE5; --green:#466D69; --green-ink:#FFFFFF;
+  --bar-prep:#B5A394; --bar-capt:#7BA098; --bar-vip:#466D69; --bar-bf:#C5282F; --bar-cola:#D9CFC4;
+  color-scheme: light; box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --paper:#15191E; --soft:#1D2228; --line:#2E353D; --ink:#F3EEE9; --muted:#B9B0A7;
+    --red:#D9474D; --mint:#22312E; --green:#5E8A85; --bar-cola:#4A433D; --bar-prep:#8E7F72; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"]{
+  --paper:#15191E; --soft:#1D2228; --line:#2E353D; --ink:#F3EEE9; --muted:#B9B0A7;
+  --red:#D9474D; --mint:#22312E; --green:#5E8A85; --bar-cola:#4A433D; --bar-prep:#8E7F72; color-scheme: dark;
+}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 64px)}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);
+  font-family:"Helvetica World","Helvetica Neue",Helvetica,Arial,sans-serif;letter-spacing:-0.5px;
+  -webkit-font-smoothing:antialiased;line-height:1.45}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--paper)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 28px}
+section{padding:72px 0;border-top:1px solid var(--line)}
+h1,h2,h3{margin:0;font-weight:700;letter-spacing:-0.5px}
+h2{font-size:clamp(28px,3.4vw,40px);line-height:1.08;max-width:24ch}
+h3{font-size:20px}
+.lead{font-size:18px;color:var(--muted);max-width:66ch;margin:14px 0 0}
+p{margin:0}
+a{color:var(--ink)}
+.num{font-size:14px;color:var(--red);font-weight:700;margin-bottom:10px}
+
+nav.sec{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--paper);border-bottom:1px solid var(--line)}
+nav.sec .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:10px;padding-bottom:10px}
+nav.sec a{white-space:nowrap;text-decoration:none;font-size:13px;font-weight:600;padding:8px 12px;border-radius:999px;color:var(--muted)}
+nav.sec a:hover,nav.sec a:focus-visible{background:var(--soft);color:var(--ink)}
+
+.top{display:flex;justify-content:space-between;align-items:center;padding:26px 0;gap:16px}
+.logo{line-height:1;text-align:center}
+.logo .a{font-size:10px;letter-spacing:6px;font-weight:700}
+.logo .b{font-size:28px;font-weight:800;letter-spacing:1px}
+.logo .c{font-size:7px;letter-spacing:2.4px;margin-top:4px}
+.date{font-size:14px;color:var(--muted);text-align:right}
+
+.hero{padding:40px 0 72px}
+.hero h1{font-size:clamp(44px,7vw,92px);line-height:.95;max-width:14ch}
+.hero .lead{font-size:20px}
+.agenda{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:12px;margin-top:40px}
+.ag{border:1px solid var(--line);border-radius:18px;padding:18px 20px}
+.ag b{display:block;font-size:16px;margin-bottom:4px}
+.ag span{font-size:14px;color:var(--muted)}
+
+/* Oferta */
+.ladder{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:36px;align-items:end}
+.step{border-radius:22px;padding:22px 24px;background:var(--soft)}
+.step .q{font-size:15px;color:var(--muted)}
+.step .d{font-weight:800;line-height:.9;margin-top:8px}
+.step .e{font-size:14px;color:var(--muted);margin-top:10px}
+.step:nth-child(1) .d{font-size:clamp(44px,5.5vw,68px)}
+.step:nth-child(2){padding-top:40px}
+.step:nth-child(2) .d{font-size:clamp(52px,7vw,86px)}
+.step:nth-child(3){background:var(--red);color:var(--red-ink);padding-top:60px}
+.step:nth-child(3) .q,.step:nth-child(3) .e{color:var(--red-ink);opacity:.92}
+.step:nth-child(3) .d{font-size:clamp(60px,8.5vw,110px)}
+.wide{margin-top:12px;border-radius:22px;padding:26px 28px;display:grid;grid-template-columns:minmax(220px,1.1fr) 2fr;gap:28px;align-items:center}
+.wide .big{font-weight:800;line-height:.95;font-size:clamp(40px,5vw,64px)}
+.wide .big small{display:block;font-size:15px;font-weight:600;margin-top:10px;line-height:1.3}
+.wide p{font-size:16px;line-height:1.5}
+.wide ul{margin:10px 0 0;padding-left:18px;font-size:15px}
+.wide li{margin:4px 0}
+.w-pack{background:var(--ink);color:var(--paper)}
+.w-pack p,.w-pack li{opacity:.9}
+.w-vip{background:var(--green);color:var(--green-ink)}
+.w-card{background:var(--soft);border:1px solid var(--line)}
+.w-card p,.w-card li{color:var(--muted)}
+@media (max-width:720px){.wide{grid-template-columns:1fr;gap:12px}}
+.rules{margin-top:28px;border:1px solid var(--line);border-radius:22px;padding:24px 26px}
+.rules ol{margin:12px 0 0;padding-left:20px;display:grid;gap:8px;font-size:15px}
+
+.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:28px;margin-top:40px}
+.fact .n{font-size:44px;font-weight:800;line-height:1}
+.fact .n small{font-size:18px;font-weight:600;color:var(--muted)}
+.fact p{font-size:15px;color:var(--muted);margin-top:10px;max-width:36ch}
+
+.tbl-wrap{overflow-x:auto;margin-top:28px;border:1px solid var(--line);border-radius:18px}
+table{width:100%;border-collapse:collapse;font-size:14px}
+th{text-align:left;font-size:13px;color:var(--muted);font-weight:600;padding:14px;border-bottom:1px solid var(--line);background:var(--soft)}
+td{padding:13px 14px;border-bottom:1px solid var(--line);vertical-align:top}
+tr:last-child td{border-bottom:none}
+td.dt{font-weight:700;white-space:nowrap}
+td.r,th.r{text-align:right;white-space:nowrap}
+tr.hl td{background:var(--mint)}
+tr.key td.dt{color:var(--red)}
+.note{font-size:13px;color:var(--muted);margin-top:12px;max-width:80ch}
+.pill{display:inline-block;font-size:12px;font-weight:700;padding:3px 10px;border-radius:999px;background:var(--mint);color:var(--ink);white-space:nowrap}
+.pill.red{background:var(--red);color:var(--red-ink)}
+.pill.earth{background:var(--soft);border:1px solid var(--line)}
+.sheet{display:flex;gap:16px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin-top:24px;background:var(--mint);border-radius:18px;padding:18px 22px}
+.sheet p{font-size:15px;max-width:60ch}
+.btn{display:inline-flex;align-items:center;min-height:44px;font-weight:700;font-size:15px;border-radius:999px;padding:12px 22px;text-decoration:none}
+.btn.red{background:var(--red);color:var(--red-ink)}
+.btn.ghost{border:1.5px solid var(--ink);color:var(--ink)}
+
+/* Roadmap */
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin-top:28px;font-size:13px;color:var(--muted)}
+.legend i{display:inline-block;width:14px;height:14px;border-radius:4px;vertical-align:-2px;margin-right:6px}
+.tl-scroll{overflow-x:auto;margin-top:22px;border:1px solid var(--line);border-radius:22px}
+.tl{min-width:1040px;position:relative;padding:0 20px 20px 0}
+.tl-row{display:grid;grid-template-columns:150px 1fr;align-items:center;min-height:52px;border-bottom:1px solid var(--line)}
+.tl-row:last-child{border-bottom:none}
+.tl-label{padding:0 16px 0 20px;font-size:14px;font-weight:700}
+.tl-track{position:relative;height:52px}
+.bar{position:absolute;top:11px;height:30px;border-radius:9px;font-size:12px;font-weight:600;display:flex;align-items:center;padding:0 9px;white-space:nowrap;overflow:hidden;color:#14191F}
+.bar.dark{color:#FFFFFF}
+.dot{position:absolute;top:17px;width:18px;height:18px;margin-left:-9px;border-radius:50%;background:var(--ink);border:3px solid var(--paper)}
+.months{display:grid;grid-template-columns:150px 1fr;border-bottom:1px solid var(--line)}
+.months .tl-track{height:40px}
+.m{position:absolute;top:12px;font-size:13px;font-weight:700}
+.tick{position:absolute;top:0;bottom:0;border-left:1px solid var(--line)}
+.ms-wrap{display:grid;grid-template-columns:150px 1fr;border-bottom:1px solid var(--line)}
+.ms-wrap .tl-track{height:118px}
+.ms{position:absolute;bottom:0;font-size:12px;line-height:1.2;padding-left:6px;border-left:2px solid var(--ink);height:var(--h);white-space:nowrap}
+.ms b{display:block;font-size:12px}
+.ms span{color:var(--muted)}
+.ms.red{border-left-color:var(--red)}
+.ms.red b{color:var(--red)}
+.vline{position:absolute;top:0;bottom:0;border-left:1px dashed var(--muted);opacity:.5}
+.today{position:absolute;top:0;bottom:0;border-left:2px solid var(--green)}
+.today span{position:absolute;top:6px;left:6px;font-size:11px;font-weight:700;color:var(--green);white-space:nowrap}
+
+/* Flujos */
+.flows{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:16px;margin-top:28px}
+.flow{border-radius:22px;padding:24px}
+.flow.nov{background:var(--ink);color:var(--paper)}
+.flow.dic{background:var(--soft);border:1px solid var(--line)}
+.flow .mo{font-size:14px;font-weight:700;opacity:.8}
+.flow h3{margin-top:4px}
+.flow dl{margin:14px 0 0;display:grid;gap:10px}
+.flow dt{font-weight:700;font-size:15px}
+.flow dd{margin:2px 0 0;font-size:14px;opacity:.85}
+
+/* Galería visual */
+.gal{display:flex;gap:18px;overflow-x:auto;padding:4px 2px 18px;margin-top:28px;scroll-snap-type:x mandatory}
+.thumb{flex:0 0 300px;scroll-snap-align:start}
+.thumb .frame{width:300px;height:600px;overflow:hidden;border-radius:16px;border:1px solid var(--line);background:#EDE8E3;position:relative}
+.thumb .frame > div{width:600px;transform:scale(.5);transform-origin:top left}
+.thumb .cap{margin-top:10px;font-size:14px}
+.thumb .cap b{display:block}
+.thumb .cap span{color:var(--muted);font-size:13px}
+.webrow{display:grid;grid-template-columns:minmax(0,2.4fr) minmax(0,1fr) minmax(0,1fr);gap:18px;margin-top:28px;align-items:start}
+@media (max-width:900px){.webrow{grid-template-columns:1fr}}
+.browser{border:1px solid var(--line);border-radius:16px;overflow:hidden;background:#FBF8F5}
+.browser .chrome{height:30px;background:var(--soft);display:flex;align-items:center;gap:6px;padding:0 12px;border-bottom:1px solid var(--line)}
+.browser .chrome i{width:9px;height:9px;border-radius:50%;background:var(--line)}
+.scaler{position:relative;overflow:hidden}
+.scaler > div{transform-origin:top left;position:absolute;top:0;left:0}
+.phone{border:8px solid #14191F;border-radius:30px;overflow:hidden;background:#FBF8F5;max-width:260px;margin:0 auto;width:100%}
+
+.goals{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin-top:32px}
+.goalc{border-radius:22px;padding:24px;background:var(--soft)}
+.goalc.mid{background:var(--green);color:var(--green-ink)}
+.goalc .k{font-size:14px;opacity:.85}
+.goalc .v{font-size:clamp(32px,4.5vw,54px);font-weight:800;line-height:1;margin-top:10px}
+
+footer{padding:40px 0 56px;border-top:1px solid var(--line);color:var(--muted);font-size:13px}
+@media (max-width:640px){
+  .wrap{padding:0 18px} section{padding:52px 0}
+  .ladder{gap:8px} .step{padding:16px 14px} .goals{grid-template-columns:1fr}
+}
+@media print{nav.sec{display:none} section{break-inside:avoid-page}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="top">
+    <div class="logo"><div class="a">FARMA</div><div class="b">DORSCH</div><div class="c">LABORATORIO DERMOCOSMÉTICO</div></div>
+    <div class="date">Plan Black Friday 2026<br>Reunión del 22 de octubre</div>
+  </div>
+</div>
+
+<nav class="sec" aria-label="Secciones"><div class="wrap">
+  <a href="#objetivo">Objetivo</a><a href="#oferta">Oferta</a><a href="#porque">Por qué</a><a href="#roadmap">Roadmap</a><a href="#dia">Día a día</a><a href="#emails">Emails</a><a href="#visual">Diseños</a><a href="#pasos">Próximos pasos</a>
+</div></nav>
+
+<div class="wrap">
+  <div class="hero">
+    <h1>Black Friday 2026: el plan completo y lo que cerramos hoy</h1>
+    <p class="lead">Campaña del 16 al 30 de noviembre, con captación previa desde el 2 de noviembre y recompras hasta el 10 de enero. Con la oferta, las fechas y cada tarea con su responsable.</p>
+    <div class="agenda">
+      <div class="ag"><b>1. Validar la oferta</b><span>Escalado, packs, lista VIP y tarjeta del 15 %, con sus reglas.</span></div>
+      <div class="ag"><b>2. Repasar el calendario</b><span>Qué sale cada día en web, email, anuncios y redes.</span></div>
+      <div class="ag"><b>3. Ver los diseños</b><span>Emails y web tal y como los verá el cliente.</span></div>
+      <div class="ag"><b>4. Repartir tareas</b><span>Qué hace vuestro equipo, qué hacemos nosotros y para cuándo.</span></div>
+    </div>
+  </div>
+</div>
+
+<section id="objetivo">
+  <div class="wrap">
+    <div class="num">Objetivo</div>
+    <h2>El Black Friday es la pieza central para duplicar el cuarto trimestre</h2>
+    <p class="lead">Tres escenarios de ventas netas de Shopify para el trimestre. El optimista duplica el Q4 2025. Noviembre aporta la mayor parte y la tarjeta del 15 % empuja diciembre sin bajar precios para todos.</p>
+    <div class="goals">
+      <div class="goalc"><div class="k">Mínimo</div><div class="v">80.000 €</div></div>
+      <div class="goalc mid"><div class="k">Realista</div><div class="v">95.000 €</div></div>
+      <div class="goalc"><div class="k">Optimista</div><div class="v">120.000 €</div></div>
+    </div>
+  </div>
+</section>
+
+<section id="oferta">
+  <div class="wrap">
+    <div class="num">La oferta</div>
+    <h2>Cuantos más productos, más descuento, en toda la web</h2>
+    <p class="lead">Cuenta el total de unidades del carrito, mezclando los productos que quiera el cliente. El ejemplo es con un producto de 35 €.</p>
+    <div class="ladder" aria-label="Escalado de descuentos">
+      <div class="step"><div class="q">1 producto</div><div class="d">-20 %</div><div class="e">28,00 €</div></div>
+      <div class="step"><div class="q">2 productos</div><div class="d">-25 %</div><div class="e">52,50 € · 26,25 €/ud</div></div>
+      <div class="step"><div class="q">3 o más</div><div class="d">-30 %</div><div class="e">73,50 € · 24,50 €/ud</div></div>
+    </div>
+
+    <div class="wide w-pack">
+      <div class="big">2ª unidad al 50 %<small>Packs seleccionados</small></div>
+      <div>
+        <p>Es el gancho del titular "Black Friday: hasta -50 %". Equivale a un 25 % sobre las dos unidades, el mismo nivel que el tramo de 2, así que no cedemos más margen.</p>
+        <ul><li>Dúo Reafirmante: Anticellulite Cream + Meso-Slim</li><li>Dúo Bronceado: BB Body Bronzing x2</li><li>Dúo Noche y Día: Retinol + Vitamina C</li></ul>
+      </div>
+    </div>
+
+    <div class="wide w-vip">
+      <div class="big">Lista VIP<small>Del 16 al 20 de noviembre</small></div>
+      <div>
+        <p>La lista compra con la oferta completa cinco días antes que nadie, más un 5 % extra con un código propio.</p>
+        <ul><li>Captación del 2 al 15 de noviembre con "Apúntate y consigue un 5 % extra"</li><li>Minitalla de Retinol + Vitamina C como regalo</li><li>El 21 de noviembre se abre a todos, sin el 5 %</li></ul>
+      </div>
+    </div>
+
+    <div class="wide w-card">
+      <div class="big">-15 %<small>Tarjeta en cada pedido</small></div>
+      <div>
+        <p>Una tarjeta física dentro de cada pedido de la campaña para la siguiente compra. Solo cuesta cuando se usa, y es una venta sin coste de captación.</p>
+        <ul><li>Válida hasta el 10 de enero, para Navidad y Reyes</li><li>Un uso por cliente, no acumulable</li><li>Recordatorio por email el 15 de diciembre y el 2 de enero</li></ul>
+      </div>
+    </div>
+
+    <div class="rules">
+      <h3>Reglas de la promoción</h3>
+      <ol>
+        <li>Los descuentos no se acumulan nunca: Shopify aplica siempre el más alto del carrito.</li>
+        <li>El código VIP solo funciona del 16 al 20 de noviembre y se suma al escalado.</li>
+        <li>Quedan fuera de la oferta las minitallas, los regalos y las tarjetas regalo.</li>
+        <li>La campaña termina el 30 de noviembre a las 23:59 o al agotar existencias.</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<section id="porque">
+  <div class="wrap">
+    <div class="num">Por qué esta oferta</div>
+    <h2>Por qué hacemos esta oferta</h2>
+    <p class="lead">Ponemos el descuento máximo donde el cliente ya llega, y cada unidad extra reparte los costes fijos del pedido.</p>
+    <div class="facts">
+      <div class="fact"><div class="n">2,67 %</div><p>de los 562 pedidos de noviembre de 2025 tuvieron 5 unidades o más. Un 30 % a partir de 5 casi no aporta facturación.</p></div>
+      <div class="fact"><div class="n">63,6 %</div><p>de los pedidos de septiembre (sin BB Body Bronzing) tuvieron 3 unidades o más, y hubo más pedidos de 3 que de 2.</p></div>
+      <div class="fact"><div class="n">82,18 € <small>vs 67,07 €</small></div><p>Ticket medio del VIP frente al Black Friday general el año pasado, vendiendo al mismo ritmo de pedidos al día.</p></div>
+    </div>
+    <div class="tbl-wrap"><table style="min-width:720px">
+      <thead><tr><th>Pedido (producto de 35 €)</th><th class="r">Paga el cliente</th><th class="r">Sin IVA</th><th class="r">Coste producto</th><th class="r">Comisión + logística</th><th class="r">Margen antes de publicidad</th></tr></thead>
+      <tbody>
+        <tr><td>1 unidad al 20 %</td><td class="r">28,00 €</td><td class="r">23,14 €</td><td class="r">5,79 €</td><td class="r">6,56 €</td><td class="r"><b>10,80 €</b></td></tr>
+        <tr><td>2 unidades al 25 %</td><td class="r">52,50 €</td><td class="r">43,39 €</td><td class="r">11,57 €</td><td class="r">7,05 €</td><td class="r"><b>24,77 €</b></td></tr>
+        <tr class="hl"><td>3 unidades al 30 %</td><td class="r">73,50 €</td><td class="r">60,74 €</td><td class="r">17,36 €</td><td class="r">7,47 €</td><td class="r"><b>35,92 €</b></td></tr>
+        <tr><td>3 unidades al 25 % (comparación)</td><td class="r">78,75 €</td><td class="r">65,08 €</td><td class="r">17,36 €</td><td class="r">7,57 €</td><td class="r"><b>40,15 €</b></td></tr>
+      </tbody>
+    </table></div>
+    <p class="note">Supuestos: IVA 21 %, coste de producto del 20 % sobre la base sin IVA, comisión de tienda del 2 % y 6 € de logística por pedido. Poner el 30 % en 3 unidades cuesta unos 4 € por pedido frente al 25 %, y cada cliente que pasa de 1 a 3 unidades deja unos 25 € más.</p>
+  </div>
+</section>
+
+<section id="roadmap">
+  <div class="wrap">
+    <div class="num">Roadmap</div>
+    <h2>Del 22 de octubre al 10 de enero, por áreas</h2>
+    <p class="lead">Cada barra es un bloque de trabajo. Los puntos son entregas con fecha cerrada y las líneas verticales, los hitos de campaña.</p>
+    <div class="legend">
+      <span><i style="background:var(--bar-prep)"></i>Preparación</span>
+      <span><i style="background:var(--bar-capt)"></i>Captación VIP</span>
+      <span><i style="background:var(--bar-vip)"></i>VIP</span>
+      <span><i style="background:var(--bar-bf)"></i>Black Friday y Cyber Monday</span>
+      <span><i style="background:var(--bar-cola)"></i>Navidad y Reyes</span>
+    </div>
+    <div class="tl-scroll"><div class="tl" id="tl"></div></div>
+  </div>
+</section>
+
+<section id="dia">
+  <div class="wrap">
+    <div class="num">Día a día</div>
+    <h2>Qué sale cada día y en qué canal</h2>
+    <p class="lead">Las fechas en rojo son días de campaña en directo. Las tareas de vuestro equipo llevan la etiqueta de FARMA DORSCH.</p>
+    <div class="tbl-wrap"><table style="min-width:980px">
+      <thead><tr><th>Día</th><th>Web y tienda</th><th>Email</th><th>Anuncios</th><th>Redes</th><th>Interno</th></tr></thead>
+      <tbody id="days"></tbody>
+    </table></div>
+    <div class="sheet">
+      <p><b>Todo el detalle está en la checklist compartida.</b> Cada tarea con fecha, canal, urgencia y responsable, para ir marcándola según se completa.</p>
+      <a class="btn red" href="https://docs.google.com/spreadsheets/d/1BYT7omjWHMb4Wm88hH1Q7UZRRg2fzlLyAlhTui4sstw/edit?gid=840952568#gid=840952568" target="_blank" rel="noopener">Abrir la checklist</a>
+    </div>
+  </div>
+</section>
+
+<section id="emails">
+  <div class="wrap">
+    <div class="num">Email</div>
+    <h2>15 envíos y los flujos adaptados mes a mes</h2>
+    <p class="lead">En noviembre los flujos empujan la venta de Black Friday; en diciembre pasan a regalo y recompra. Quien compra durante la campaña deja de recibir los envíos de venta.</p>
+    <div class="flows">
+      <div class="flow nov"><div class="mo">Todo noviembre</div><h3>Flujos en modo Black Friday</h3>
+        <dl>
+          <dt>Bienvenida VIP</dt><dd>Confirma el alta, explica el 5 % extra y la apertura del 16 de noviembre.</dd>
+          <dt>Carrito y checkout abandonados</dt><dd>Mensaje del tramo siguiente ("con 1 más, -30 %") y fecha de fin.</dd>
+          <dt>Navegación abandonada</dt><dd>El producto visto con la oferta y una rutina de 3 sugerida.</dd>
+          <dt>Post compra</dt><dd>Aviso de la tarjeta del 15 % que va en la caja y de su caducidad.</dd>
+        </dl></div>
+      <div class="flow dic"><div class="mo">Todo diciembre</div><h3>Flujos en modo Navidad y Reyes</h3>
+        <dl>
+          <dt>Bienvenida</dt><dd>Ideas de regalo por persona y fecha límite para recibir antes de Nochebuena.</dd>
+          <dt>Carrito y checkout abandonados</dt><dd>Plazos de envío para Navidad y, a compradores de BF, recordatorio del 15 %.</dd>
+          <dt>Navegación abandonada</dt><dd>El producto visto presentado como regalo.</dd>
+          <dt>Post compra</dt><dd>Rutina de uso y siguiente compra antes de Reyes.</dd>
+        </dl></div>
+    </div>
+    <div class="tbl-wrap"><table style="min-width:820px">
+      <thead><tr><th>Fecha</th><th>Asunto propuesto</th><th>Objetivo</th><th>A quién</th></tr></thead>
+      <tbody id="emailrows"></tbody>
+    </table></div>
+  </div>
+</section>
+
+<section id="visual">
+  <div class="wrap">
+    <div class="num">Diseños</div>
+    <h2>Así lo verá el cliente</h2>
+    <p class="lead">Los emails clave de la campaña y la web en ordenador y móvil. Las fotos son huecos para el banco de imágenes oficial y los precios son de ejemplo.</p>
+    <h3 style="margin-top:36px">Emails</h3>
+    <div class="gal" id="gal" tabindex="0" aria-label="Galería de emails, desplázate horizontalmente"></div>
+    <h3 style="margin-top:28px">Web</h3>
+    <div class="webrow">
+      <div>
+        <div class="browser"><div class="chrome"><i></i><i></i><i></i></div><div class="scaler" id="sc-desk" data-w="1200" data-h="1560"><div id="desk"></div></div></div>
+        <div class="thumb cap" style="margin-top:10px"><b>Portada Black Friday en ordenador</b><span>Oferta arriba, escalado visible, packs y más vendidos.</span></div>
+      </div>
+      <div>
+        <div class="phone"><div class="scaler" id="sc-mob" data-w="390" data-h="1080"><div id="mob"></div></div></div>
+        <div class="thumb cap" style="margin-top:10px"><b>Portada en móvil</b><span>Barra fija de compra al hacer scroll.</span></div>
+      </div>
+      <div>
+        <div class="phone"><div class="scaler" id="sc-cart" data-w="390" data-h="1080"><div id="cart"></div></div></div>
+        <div class="thumb cap" style="margin-top:10px"><b>Carrito en móvil</b><span>Barra de tramos y venta cruzada para llegar al -30 %.</span></div>
+      </div>
+    </div>
+    <div style="margin-top:24px"><a class="btn ghost" href="https://claude.ai/artifact/4Fg8gNwvGGFs1AtTDhwcTq" target="_blank" rel="noopener">Ver los diseños completos</a></div>
+  </div>
+</section>
+
+<section id="pasos">
+  <div class="wrap">
+    <div class="num">Próximos pasos</div>
+    <h2>Lo que pasa justo después de esta reunión</h2>
+    <div class="tbl-wrap"><table style="min-width:640px">
+      <thead><tr><th>Cuándo</th><th>Qué</th><th>Quién</th></tr></thead>
+      <tbody>
+        <tr><td class="dt">Hoy</td><td>Enviamos el resumen de la reunión y el enlace a este plan</td><td><span class="pill">Nosotros</span></td></tr>
+        <tr><td class="dt">23 oct</td><td>Empezamos la landing y el pop-up VIP y las creatividades de captación</td><td><span class="pill">Nosotros</span></td></tr>
+        <tr><td class="dt">27 oct</td><td>Aprobación de la oferta, los packs y la minitalla</td><td><span class="pill earth">FARMA DORSCH</span></td></tr>
+        <tr><td class="dt">31 oct</td><td>Calendario de redes y brief a creadoras</td><td><span class="pill earth">FARMA DORSCH</span> <span class="pill">Nosotros</span></td></tr>
+        <tr><td class="dt">2 nov</td><td>Arranca la captación VIP en web, email, anuncios y redes</td><td><span class="pill">Nosotros</span></td></tr>
+        <tr><td class="dt">Cada martes</td><td>Punto de seguimiento de 20 minutos hasta el 1 de diciembre</td><td><span class="pill earth">FARMA DORSCH</span> <span class="pill">Nosotros</span></td></tr>
+      </tbody>
+    </table></div>
+  </div>
+</section>
+
+<div class="wrap"><footer>FARMA DORSCH · Plan de campaña Black Friday 2026 · Documento de trabajo para la reunión del 22 de octubre.</footer></div>
+
+<script>
+(function(){
+  function el(tag, cls, txt){ var e=document.createElement(tag); if(cls) e.className=cls; if(txt!=null) e.textContent=txt; return e; }
+  var FD='FARMA DORSCH';
+
+  /* ---------- Roadmap ---------- */
+  var START=new Date(2026,9,21), END=new Date(2027,0,11), SPAN=(END-START)/864e5;
+  function d(s){ var p=s.split('-'); return new Date(+p[0],+p[1]-1,+p[2]); }
+  function pct(s){ return ((d(s)-START)/864e5)/SPAN*100; }
+  function w(a,b){ return Math.max(((d(b)-d(a))/864e5+1)/SPAN*100,0.9); }
+  var C={prep:'var(--bar-prep)',capt:'var(--bar-capt)',vip:'var(--bar-vip)',bf:'var(--bar-bf)',cola:'var(--bar-cola)'};
+  var lanes=[
+    {n:'Oferta y tienda',b:[['2026-10-22','2026-10-27','Cierre de oferta','prep'],['2026-10-28','2026-11-09','Montaje en Shopify','prep'],['2026-11-10','2026-11-12','Pruebas','prep']],p:['2026-10-27','2026-11-09']},
+    {n:'Web',b:[['2026-10-23','2026-11-01','Landing VIP','prep'],['2026-11-02','2026-11-15','Web en captación','capt'],['2026-11-16','2026-11-20','VIP','vip'],['2026-11-21','2026-11-30','Web Black Friday','bf'],['2026-12-01','2027-01-10','Web Navidad','cola']],p:['2026-11-12']},
+    {n:'Email',b:[['2026-10-22','2026-11-01','Lista y flujos','prep'],['2026-11-02','2026-11-13','3 envíos captación','capt'],['2026-11-15','2026-11-20','4 envíos VIP','vip'],['2026-11-21','2026-11-30','6 envíos BF','bf'],['2026-12-01','2027-01-10','Flujos de Navidad','cola']],p:['2026-11-10','2026-12-15','2027-01-02']},
+    {n:'Anuncios',b:[['2026-10-23','2026-11-01','Creatividades VIP','prep'],['2026-11-02','2026-11-15','Captación VIP','capt'],['2026-11-16','2026-11-30','Campaña de ventas','bf']],p:['2026-11-12']},
+    {n:'Redes',b:[['2026-10-22','2026-11-01','Calendario y creadoras','prep'],['2026-11-02','2026-11-15','Empuje a la lista','capt'],['2026-11-16','2026-11-30','Stories diarias','bf']],p:['2026-11-27']},
+    {n:'Logística',b:[['2026-11-01','2026-11-13','Stock y tarjetas','prep'],['2026-11-16','2026-11-30','Tarjeta en cada pedido','bf'],['2026-12-01','2027-01-10','Recompras con el 15 %','cola']],p:['2026-11-05','2026-11-13']}
+  ];
+  var milestones=[['2026-10-27','Decisiones','cerradas',false,86],['2026-11-02','Abre captación','VIP',false,56],['2026-11-13','Revisión','final',false,86],['2026-11-16','Abre VIP','',true,56],['2026-11-21','Abre','para todos',true,86],['2026-11-27','Black','Friday',true,56],['2026-11-30','Cyber','Monday',true,86],['2026-12-24','Nochebuena','',false,56],['2027-01-10','Caduca','tarjeta 15 %',false,86]];
+  var tl=document.getElementById('tl');
+  function row(cls,label){ var r=el('div',cls); r.appendChild(el('div','tl-label',label)); var t=el('div','tl-track'); r.appendChild(t); tl.appendChild(r); return t; }
+  var mt=row('months','');
+  [['2026-10-21','Octubre'],['2026-11-01','Noviembre'],['2026-12-01','Diciembre'],['2027-01-01','Enero']].forEach(function(m){ var e=el('div','m',m[1]); e.style.left='calc('+pct(m[0])+'% + 6px)'; mt.appendChild(e); var t=el('div','tick'); t.style.left=pct(m[0])+'%'; mt.appendChild(t); });
+  var ms=row('ms-wrap','Hitos');
+  milestones.forEach(function(m){ var e=el('div','ms'+(m[3]?' red':'')); e.style.left=pct(m[0])+'%'; e.style.setProperty('--h',m[4]+'px'); e.appendChild(el('b','',m[1])); if(m[2]) e.appendChild(el('span','',m[2])); ms.appendChild(e); });
+  lanes.forEach(function(l){ var t=row('tl-row',l.n);
+    l.b.forEach(function(b){ var e=el('div','bar'+((b[3]==='vip'||b[3]==='bf')?' dark':''),b[2]); e.style.left=pct(b[0])+'%'; e.style.width=w(b[0],b[1])+'%'; e.style.background=C[b[3]]; e.title=b[2]; t.appendChild(e); });
+    l.p.forEach(function(p){ var e=el('div','dot'); e.style.left=pct(p)+'%'; e.title='Entrega '+p; t.appendChild(e); });
+  });
+  var inner=el('div'); inner.style.cssText='position:absolute;top:0;bottom:0;left:150px;right:20px;pointer-events:none';
+  milestones.filter(function(m){return m[3];}).forEach(function(m){ var v=el('div','vline'); v.style.left=pct(m[0])+'%'; inner.appendChild(v); });
+  var tv=el('div','today'); tv.style.left=pct('2026-10-22')+'%'; tv.appendChild(el('span','','Hoy')); inner.appendChild(tv); tl.appendChild(inner);
+
+  /* ---------- Día a día ---------- */
+  var days=[
+    ['Jue 22 oct',0,'','','','','Presentación del plan y decisiones'],
+    ['Vie 23 oct',0,'Empezamos landing y pop-up VIP','Limpieza de lista y segmentos','Creatividades de captación VIP','',''],
+    ['Mar 27 oct',0,'','','','','Aprobación de oferta, packs y minitalla · '+FD],
+    ['Mié 28 oct',0,'Empieza el montaje de descuentos en Shopify','Calentamiento de envíos','','',''],
+    ['Sáb 31 oct',0,'Landing y pop-up VIP listos','Flujo de bienvenida VIP listo','Campaña de captación montada','Calendario de noviembre y brief a creadoras · '+FD,''],
+    ['Lun 2 nov',1,'Pop-up VIP y barra superior en directo','Abre la lista VIP (toda la lista)','Arranca la captación VIP','Enlace de la bio a la landing VIP · '+FD,''],
+    ['Jue 5 nov',0,'','','','','Stock y capacidad de almacén confirmados · '+FD],
+    ['Lun 9 nov',0,'Descuentos montados en borrador','','','','Código de la tarjeta del 15 % creado'],
+    ['Mar 10 nov',0,'Pruebas de carrito (10 al 12)','Lo que te llevas en la VIP (no VIP)','','','Textos de emails revisados por Sonia y Sabela · '+FD],
+    ['Jue 12 nov',0,'Landing y portada BF listas en copia programada','Plantilla BF y flujos de noviembre listos','Creatividades BF aprobadas · '+FD,'Post fijado e highlight preparados · '+FD,'Feed de Merchant Center revisado'],
+    ['Vie 13 nov',0,'','Últimos días para entrar en la VIP (no VIP)','','','Revisión final · tarjetas en almacén · '+FD],
+    ['Dom 15 nov',0,'','Mañana se abre tu acceso (VIP)','Cierra la captación','Cuenta atrás en stories · '+FD,''],
+    ['Lun 16 nov',2,'Web en modo VIP, código activo','Ya está abierto, con tu código (VIP)','Campaña de ventas: lista y retargeting','Stories diarias desde hoy · '+FD,'Tarjeta del 15 % en cada pedido'],
+    ['Mié 18 nov',2,'','Packs 2ª unidad al 50 % (VIP)','','',''],
+    ['Vie 20 nov',2,'El código VIP caduca a las 23:59','Último día VIP (VIP sin compra)','','',''],
+    ['Sáb 21 nov',2,'Black Friday abierto a todos','Black Friday para todos (toda la lista)','Cambio de textos y públicos nuevos','Post de apertura · '+FD,''],
+    ['Mar 24 nov',2,'','Más vendidos y escalado (sin compra)','Revisión de mitad de campaña','','Seguimiento semanal'],
+    ['Vie 27 nov',2,'Portada del día grande','Tu rutina de 3 con un 30 % (toda la lista)','Inversión máxima y Search de marca reforzado','Publican las creadoras · '+FD,'Atención al cliente reforzada · '+FD],
+    ['Dom 29 nov',2,'','Quedan horas (sin compra)','','',''],
+    ['Lun 30 nov',2,'Cyber Monday con cuenta atrás','Cyber Monday y última llamada','Piezas de urgencia','Stories de último día · '+FD,'Fin a las 23:59'],
+    ['Mar 1 dic',0,'Retiramos Black Friday, web en Navidad','Flujos en modo Navidad','Apagamos la campaña de ventas','',''],
+    ['Vie 4 dic',0,'','','','','Informe final de campaña'],
+    ['Mar 15 dic',0,'','Tu 15 % para Navidad (compradores BF)','','',''],
+    ['Sáb 2 ene',0,'','Tu 15 % caduca el 10 (compradores BF)','','',''],
+    ['Dom 10 ene',0,'Caduca la tarjeta del 15 %','','','','Medimos recompras']
+  ];
+  var tb=document.getElementById('days');
+  days.forEach(function(r){ var tr=el('tr', r[1]===2?'key':''); tr.appendChild(el('td','dt',r[0]));
+    for(var i=2;i<7;i++){ var c=el('td'); var txt=r[i]||''; if(txt.indexOf(' · '+FD)>-1){ c.appendChild(document.createTextNode(txt.replace(' · '+FD,'')+' ')); c.appendChild(el('span','pill earth',FD)); } else if(txt){ c.textContent=txt; } else { c.textContent='—'; c.style.color='var(--line)'; } tr.appendChild(c); }
+    tb.appendChild(tr); });
+
+  /* ---------- Emails ---------- */
+  var emails=[
+    ['2 nov','Tu Black Friday empieza 5 días antes (si quieres)','Altas VIP','Toda la lista',0],
+    ['10 nov','Lo que te llevas por estar en la lista VIP','Altas VIP','No VIP',0],
+    ['13 nov','Últimos días para entrar en la lista VIP','Altas VIP','No VIP',0],
+    ['15 nov','Mañana se abre tu acceso','Preparar compra','VIP',1],
+    ['16 nov','Ya está abierto. Tu código VIP dentro','Venta','VIP',1],
+    ['18 nov','Packs con la 2ª unidad al 50 %','Venta','VIP',1],
+    ['20 nov','Último día de tu acceso VIP','Venta','VIP sin compra',1],
+    ['21 nov','Black Friday: hasta -50 % en toda la web','Venta','Toda la lista',2],
+    ['24 nov','Lo que más se está llevando','Venta','Sin compra',2],
+    ['27 nov','Hoy es el día: tu rutina de 3 con un 30 %','Venta','Toda la lista',2],
+    ['29 nov','Quedan horas','Venta','Sin compra',2],
+    ['30 nov','Cyber Monday: último día','Venta','Toda la lista',2],
+    ['30 nov noche','Tu -30 % se acaba a medianoche','Venta','Sin compra',2],
+    ['15 dic','Tu 15 % para regalar sigue activo','Recompra','Compradores BF',0],
+    ['2 ene','Tu 15 % caduca el 10: Reyes','Recompra','Compradores BF sin recompra',0]
+  ];
+  var et=document.getElementById('emailrows');
+  emails.forEach(function(e){ var tr=el('tr',e[4]?'key':''); tr.appendChild(el('td','dt',e[0])); tr.appendChild(el('td','',e[1])); tr.appendChild(el('td','',e[2])); var td=el('td'); td.appendChild(el('span','pill'+(e[4]===2?' red':''),e[3])); tr.appendChild(td); et.appendChild(tr); });
+
+  /* ---------- Mini diseños (colores fijos de marca) ---------- */
+  var F="font-family:'Helvetica World','Helvetica Neue',Helvetica,Arial,sans-serif;letter-spacing:-0.5px;";
+  function logo(color,size){ size=size||1; return '<div style="text-align:center;line-height:1;color:'+color+'"><div style="font-size:'+(10*size)+'px;letter-spacing:6px;font-weight:700">FARMA</div><div style="font-size:'+(30*size)+'px;font-weight:800">DORSCH</div><div style="font-size:'+(7.5*size)+'px;letter-spacing:2.4px;margin-top:4px">LABORATORIO DERMOCOSMÉTICO</div></div>'; }
+  function cta(t,bg,fg){ return '<a style="display:inline-block;margin-top:24px;background:'+bg+';color:'+fg+';text-decoration:none;font-weight:700;padding:17px 34px;border-radius:999px;font-size:16px">'+t+'</a>'; }
+  function ladder(dark){ var b=dark?'#262C33':'#F4EEE8', f=dark?'#FFFFFF':'#14191F', m=dark?'#D9D3CD':'#5A5148';
+    return '<div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;text-align:center">'+
+      '<div style="background:'+b+';color:'+f+';border-radius:18px;padding:18px 6px"><div style="font-size:13px;color:'+m+'">1 producto</div><div style="font-size:34px;font-weight:800">-20 %</div></div>'+
+      '<div style="background:'+b+';color:'+f+';border-radius:18px;padding:18px 6px"><div style="font-size:13px;color:'+m+'">2 productos</div><div style="font-size:34px;font-weight:800">-25 %</div></div>'+
+      '<div style="background:#C5282F;color:#fff;border-radius:18px;padding:18px 6px"><div style="font-size:13px">3 o más</div><div style="font-size:34px;font-weight:800">-30 %</div></div></div>'; }
+  function ph(t,bg,h){ return '<div style="height:'+h+'px;background:'+bg+';border-radius:18px;display:flex;align-items:center;justify-content:center;color:#6E655C;font-size:14px">'+t+'</div>'; }
+  function foot(){ return '<div style="background:#14191F;color:#D9D3CD;padding:26px;text-align:center;font-size:12px;margin-top:36px">'+logo('#FFFFFF',.8)+'<div style="margin-top:10px">Darte de baja · Condiciones</div></div>'; }
+  var mails=[
+    {d:'2 nov',n:'Abre la lista VIP',h:'<div style="padding:26px 0 20px">'+logo('#14191F')+'</div><div style="margin:0 24px;background:#F1E3DF;border-radius:28px;padding:44px 36px;text-align:center"><div style="font-size:13px;font-weight:700;color:#A8242A">Lista VIP de Black Friday</div><div style="font-size:46px;font-weight:800;line-height:1.02;margin-top:14px">Tu Black Friday empieza 5 días antes</div><div style="font-size:17px;color:#3E372F;margin-top:16px">Apúntate y compra del 16 al 20 de noviembre, antes que nadie y con mejor precio.</div>'+cta('Quiero entrar en la lista VIP','#C5282F','#fff')+'</div>'+
+      '<div style="padding:36px;display:grid;gap:12px">'+['16 nov|Acceso 5 días antes|#14191F','+5%|Un 5 % extra en todo|#C5282F','🎁|Minitalla de regalo|#466D69'].map(function(x){var p=x.split('|');return '<div style="display:flex;gap:16px;align-items:center;background:#FBF8F5;border-radius:20px;padding:18px"><div style="width:58px;height:58px;border-radius:50%;background:'+p[2]+';color:#fff;font-weight:800;font-size:14px;display:flex;align-items:center;justify-content:center">'+(p[0]==='🎁'?'Regalo':p[0])+'</div><div style="font-size:18px;font-weight:800">'+p[1]+'</div></div>';}).join('')+'</div>'+
+      '<div style="padding:0 36px">'+ladder(false)+'</div>'+foot()},
+    {d:'16 nov',n:'VIP abierto con código',h:'<div style="background:#14191F;color:#fff;padding:26px 36px 44px;text-align:center">'+logo('#FFFFFF')+'<div style="font-size:13px;font-weight:700;color:#E9C9C2;margin-top:36px">Solo para la lista, del 16 al 20 de noviembre</div><div style="font-size:54px;font-weight:800;line-height:1;margin-top:14px">Tu Black Friday ya está abierto</div><div style="margin:28px auto 0;background:#fff;color:#14191F;border-radius:20px;padding:20px;border:2px dashed #C5282F;max-width:420px"><div style="font-size:13px;font-weight:700;color:#A8242A">Tu código, +5 % extra</div><div style="font-size:30px;font-weight:800;letter-spacing:2px;margin-top:6px">[CÓDIGO VIP]</div></div>'+cta('Entrar con mi código','#C5282F','#fff')+'</div>'+
+      '<div style="padding:36px">'+ladder(false)+'</div><div style="padding:0 36px;display:grid;grid-template-columns:1fr 1fr;gap:14px">'+ph('BB Body Bronzing','#F1E3DF',200)+ph('Anticellulite Cream','#E7EFEC',200)+ph('Retinol','#F1EAE3',200)+ph('Vitamina C','#E9EEF2',200)+'</div>'+foot()},
+    {d:'21 nov',n:'Black Friday para todos',h:'<div style="padding:26px 0 20px">'+logo('#14191F')+'</div><div style="margin:0 24px;border-radius:28px;background:#14191F;color:#fff;text-align:center;padding:40px 32px"><div style="font-size:14px;font-weight:700;color:#E9C9C2">Black Friday, del 21 al 30 de noviembre</div><div style="font-size:28px;font-weight:700;margin-top:18px">Hasta</div><div style="font-size:140px;font-weight:800;line-height:.9">-50<span style="font-size:76px;color:#E9545A">%</span></div><div style="font-size:17px;color:#E4DED8;margin-top:14px">En toda la web. Cuanto más completas tu rutina, más ahorras.</div>'+cta('Comprar ahora','#C5282F','#fff')+'</div>'+
+      '<div style="padding:36px">'+ladder(false)+'</div><div style="padding:0 36px;display:grid;gap:12px">'+['Dúo Reafirmante|#E7EFEC','Dúo Bronceado|#F1E3DF','Dúo Noche y Día|#F1EAE3'].map(function(x){var p=x.split('|');return '<div style="display:flex;gap:16px;align-items:center;background:#FBF8F5;border-radius:20px;padding:14px"><div style="width:130px;height:100px;border-radius:14px;background:'+p[1]+'"></div><div><div style="font-size:12px;font-weight:700;color:#C5282F">2ª unidad al 50 %</div><div style="font-size:20px;font-weight:800">'+p[0]+'</div></div></div>';}).join('')+'</div>'+foot()},
+    {d:'27 nov',n:'Viernes: rutina de 3',h:'<div style="background:#C5282F;color:#fff;text-align:center;padding:26px 36px 44px">'+logo('#FFFFFF')+'<div style="font-size:14px;font-weight:700;margin-top:36px">Viernes 27, Black Friday</div><div style="font-size:52px;font-weight:800;line-height:1.02;margin-top:14px">Tu rutina de 3, con un 30 % menos</div>'+cta('Montar mi rutina','#FFFFFF','#14191F')+'</div>'+
+      '<div style="padding:36px"><div style="background:#14191F;color:#fff;border-radius:22px;padding:22px 26px;display:flex;justify-content:space-between;align-items:center"><div><div style="font-size:13px;color:#D9D3CD">3 productos de 35 €</div><div style="font-size:15px;color:#D9D3CD;text-decoration:line-through">105,00 €</div></div><div style="text-align:right"><div style="font-size:36px;font-weight:800">73,50 €</div><div style="font-size:14px;font-weight:700;color:#F2B8B5">Ahorras 31,50 €</div></div></div></div>'+
+      '<div style="padding:0 36px;display:grid;gap:14px">'+['Celulitis y firmeza|#E7EFEC','Arrugas y luminosidad|#F1EAE3','Bronceado sin sol|#F1E3DF'].map(function(x){var p=x.split('|');return '<div style="background:'+p[1]+';border-radius:22px;padding:22px"><div style="font-size:22px;font-weight:800">'+p[0]+'</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px"><div style="height:80px;background:#fff;border-radius:12px"></div><div style="height:80px;background:#fff;border-radius:12px"></div><div style="height:80px;background:#fff;border-radius:12px"></div></div></div>';}).join('')+'</div>'+foot()},
+    {d:'30 nov',n:'Cyber Monday',h:'<div style="background:#14191F;color:#fff;text-align:center;padding:26px 36px 44px">'+logo('#FFFFFF')+'<div style="display:inline-block;margin-top:34px;background:#C5282F;font-size:13px;font-weight:700;padding:8px 16px;border-radius:999px">Cyber Monday, 30 de noviembre</div><div style="font-size:64px;font-weight:800;line-height:1;margin-top:18px">Último día</div><div style="font-size:17px;color:#E4DED8;margin-top:14px">Hasta -50 % en toda la web hasta las 23:59.</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:10px;max-width:360px;margin:26px auto 0">'+['14|horas','32|minutos','10|segundos'].map(function(x){var p=x.split('|');return '<div style="background:#262C33;border-radius:16px;padding:14px 6px"><div style="font-size:36px;font-weight:800">'+p[0]+'</div><div style="font-size:12px;color:#D9D3CD">'+p[1]+'</div></div>';}).join('')+'</div>'+cta('Aprovechar antes de medianoche','#C5282F','#fff')+'</div>'+
+      '<div style="padding:36px">'+ladder(false)+'</div><div style="padding:0 36px;display:grid;gap:10px">'+['BB Body Bronzing|#F1E3DF','Anticellulite Cream|#E7EFEC','Retinol|#F1EAE3'].map(function(x){var p=x.split('|');return '<div style="display:flex;gap:14px;align-items:center;background:#FBF8F5;border-radius:18px;padding:12px"><div style="width:80px;height:80px;border-radius:14px;background:'+p[1]+'"></div><div style="flex:1;font-size:17px;font-weight:800">'+p[0]+'</div><div style="background:#14191F;color:#fff;font-weight:700;padding:12px 18px;border-radius:999px;font-size:14px">Comprar</div></div>';}).join('')+'</div>'+foot()},
+    {d:'15 dic',n:'Tu 15 % para Navidad',h:'<div style="padding:26px 0 20px">'+logo('#14191F')+'</div><div style="margin:0 24px;background:#7E1D22;color:#fff;border-radius:28px;padding:40px 32px;text-align:center"><div style="font-size:13px;font-weight:700;color:#F2D6D3">Navidad y Reyes</div><div style="font-size:42px;font-weight:800;line-height:1.05;margin-top:12px">Tu tarjeta de -15 % sigue en pie</div><div style="margin:26px auto 0;width:340px;background:#F6F2EE;color:#14191F;border-radius:18px;padding:22px;text-align:left"><div style="display:flex;justify-content:space-between"><div style="line-height:1"><div style="font-size:8px;letter-spacing:4px;font-weight:700">FARMA</div><div style="font-size:17px;font-weight:800">DORSCH</div></div><div style="font-size:36px;font-weight:800;color:#C5282F">-15 %</div></div><div style="font-size:13px;color:#5A5148;margin-top:18px">Tu código</div><div style="font-size:22px;font-weight:800">[CÓDIGO TARJETA]</div><div style="font-size:12px;color:#5A5148;margin-top:4px">Válido hasta el 10 de enero</div></div>'+cta('Usar mi 15 %','#FFFFFF','#14191F')+'</div>'+
+      '<div style="padding:36px;display:grid;grid-template-columns:1fr 1fr;gap:12px">'+ph('Para tu madre','#F1EAE3',180)+ph('Para tu amiga','#F1E3DF',180)+ph('Para ti','#E7EFEC',180)+ph('Amigo invisible','#E9EEF2',180)+'</div>'+foot()}
+  ];
+  var gal=document.getElementById('gal');
+  mails.forEach(function(m){ var t=el('div','thumb'); var f=el('div','frame'); var inner=document.createElement('div'); inner.setAttribute('style',F+'background:#FFFFFF;color:#14191F'); inner.innerHTML=m.h; f.appendChild(inner); t.appendChild(f); var c=el('div','cap'); c.appendChild(el('b','',m.n)); c.appendChild(el('span','',m.d)); t.appendChild(c); gal.appendChild(t); });
+
+  var card=function(n,bg){ return '<div style="background:#fff;border:1px solid #ECE4DC;border-radius:24px;overflow:hidden"><div style="aspect-ratio:1/1;background:'+bg+';position:relative"><span style="position:absolute;top:12px;right:12px;background:#C5282F;color:#fff;font-size:12px;font-weight:700;padding:6px 10px;border-radius:999px">-20 %</span></div><div style="padding:16px"><div style="font-size:17px;font-weight:800">'+n+'</div><div style="font-size:13px;color:#466D69;font-weight:600;margin-top:4px">Hasta -30 % llevando 3</div><div style="border:1.5px solid #14191F;border-radius:999px;text-align:center;padding:10px;font-weight:700;margin-top:12px">Añadir</div></div></div>'; };
+  document.getElementById('desk').innerHTML='<div style="'+F+'width:1200px;background:#FBF8F5;color:#14191F">'+
+    '<div style="background:#C5282F;color:#fff;font-size:14px;font-weight:700;padding:10px;text-align:center">Black Friday: hasta -50 % · Termina en 02 d 14 h · Tarjeta -15 % para Navidad en cada pedido</div>'+
+    '<div style="background:#fff;border-bottom:1px solid #ECE4DC;padding:16px 40px;display:flex;justify-content:space-between;align-items:center"><div style="display:flex;gap:26px;font-weight:700;font-size:15px"><span style="color:#C5282F">Black Friday</span><span>Facial</span><span>Corporal</span><span>Capilar</span><span>Packs</span></div>'+logo('#14191F',.9)+'<div style="width:120px"></div></div>'+
+    '<div style="padding:32px 40px 0"><div style="display:grid;grid-template-columns:1fr 1fr;background:#14191F;border-radius:28px;overflow:hidden"><div style="padding:60px 48px;color:#fff"><div style="font-size:14px;font-weight:700;color:#E9C9C2">Black Friday, del 21 al 30 de noviembre</div><div style="font-size:70px;font-weight:800;line-height:1;margin-top:18px">Hasta -50 % en tu rutina</div><div style="font-size:19px;color:#E4DED8;margin-top:18px">Cuanto más completas tu rutina, más ahorras.</div><div style="display:flex;gap:12px;margin-top:26px"><span style="background:#C5282F;padding:16px 28px;border-radius:999px;font-weight:700">Comprar con descuento</span><span style="background:#fff;color:#14191F;padding:16px 28px;border-radius:999px;font-weight:700">Ver packs</span></div></div><div style="background:#2A2F35;min-height:480px"></div></div></div>'+
+    '<div style="padding:28px 40px 0"><div style="background:#fff;border:1px solid #ECE4DC;border-radius:24px;padding:28px;display:grid;grid-template-columns:1.2fr 1fr 1fr 1fr;gap:16px;align-items:center"><div style="font-size:24px;font-weight:800">Cuantos más, más ahorras</div><div style="background:#F4EEE8;border-radius:18px;padding:20px;text-align:center"><div style="color:#5A5148">1 producto</div><div style="font-size:42px;font-weight:800">-20 %</div></div><div style="background:#F4EEE8;border-radius:18px;padding:20px;text-align:center"><div style="color:#5A5148">2 productos</div><div style="font-size:42px;font-weight:800">-25 %</div></div><div style="background:#C5282F;color:#fff;border-radius:18px;padding:20px;text-align:center"><div>3 o más</div><div style="font-size:42px;font-weight:800">-30 %</div></div></div></div>'+
+    '<div style="padding:60px 40px 0"><div style="font-size:42px;font-weight:800">2ª unidad al 50 %</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-top:24px">'+['Dúo Reafirmante|#E7EFEC','Dúo Bronceado|#F1E3DF','Dúo Noche y Día|#F1EAE3'].map(function(x){var p=x.split('|');return '<div style="background:#fff;border:1px solid #ECE4DC;border-radius:24px;overflow:hidden"><div style="height:220px;background:'+p[1]+'"></div><div style="padding:22px"><div style="font-size:22px;font-weight:800">'+p[0]+'</div><div style="background:#14191F;color:#fff;border-radius:999px;text-align:center;padding:14px;font-weight:700;margin-top:14px">Añadir pack</div></div></div>';}).join('')+'</div></div>'+
+    '<div style="padding:60px 40px 0"><div style="font-size:42px;font-weight:800">Completa tu rutina de 3</div><div style="display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin-top:24px">'+card('BB Body Bronzing','#F1E3DF')+card('Anticellulite Cream','#E7EFEC')+card('Retinol','#F1EAE3')+card('Vitamina C','#E9EEF2')+'</div></div></div>';
+
+  document.getElementById('mob').innerHTML='<div style="'+F+'width:390px;height:1080px;background:#FBF8F5;color:#14191F;position:relative;overflow:hidden">'+
+    '<div style="background:#C5282F;color:#fff;font-size:12px;font-weight:700;padding:9px;text-align:center">Hasta -50 % · 02 d 14 h 32 min</div>'+
+    '<div style="background:#fff;border-bottom:1px solid #ECE4DC;padding:10px">'+logo('#14191F',.75)+'</div>'+
+    '<div style="margin:14px 16px 0;background:#14191F;border-radius:24px;overflow:hidden;color:#fff"><div style="height:220px;background:#2A2F35"></div><div style="padding:22px"><div style="font-size:12px;font-weight:700;color:#E9C9C2">Del 21 al 30 de noviembre</div><div style="font-size:38px;font-weight:800;line-height:1.02;margin-top:10px">Hasta -50 % en tu rutina</div><div style="background:#C5282F;border-radius:999px;text-align:center;padding:15px;font-weight:700;margin-top:16px">Comprar con descuento</div></div></div>'+
+    '<div style="margin:18px 16px 0;background:#fff;border:1px solid #ECE4DC;border-radius:20px;padding:16px"><div style="font-size:17px;font-weight:800;margin-bottom:10px">Cuantos más, más ahorras</div><div style="display:grid;grid-template-columns:repeat(3,1fr);gap:8px;text-align:center"><div style="background:#F4EEE8;border-radius:14px;padding:10px 4px"><div style="font-size:11px">1 ud</div><div style="font-size:24px;font-weight:800">-20 %</div></div><div style="background:#F4EEE8;border-radius:14px;padding:10px 4px"><div style="font-size:11px">2 uds</div><div style="font-size:24px;font-weight:800">-25 %</div></div><div style="background:#C5282F;color:#fff;border-radius:14px;padding:10px 4px"><div style="font-size:11px">3 o más</div><div style="font-size:24px;font-weight:800">-30 %</div></div></div></div>'+
+    '<div style="margin:24px 16px 0;font-size:26px;font-weight:800">2ª unidad al 50 %</div><div style="display:flex;gap:12px;margin:14px 0 0 16px"><div style="flex:0 0 260px;background:#fff;border:1px solid #ECE4DC;border-radius:20px;overflow:hidden"><div style="height:160px;background:#E7EFEC"></div><div style="padding:14px;font-size:17px;font-weight:800">Dúo Reafirmante</div></div><div style="flex:0 0 260px;background:#fff;border:1px solid #ECE4DC;border-radius:20px;overflow:hidden"><div style="height:160px;background:#F1E3DF"></div><div style="padding:14px;font-size:17px;font-weight:800">Dúo Bronceado</div></div></div>'+
+    '<div style="position:absolute;left:0;right:0;bottom:0;background:#fff;border-top:1px solid #ECE4DC;padding:12px 16px 18px;display:flex;align-items:center;gap:10px"><div style="flex:1;font-size:15px;font-weight:800">Llévate 3 y ahorra un 30 %</div><div style="background:#C5282F;color:#fff;border-radius:999px;padding:13px 20px;font-weight:700">Comprar</div></div></div>';
+
+  document.getElementById('cart').innerHTML='<div style="'+F+'width:390px;height:1080px;background:#fff;color:#14191F;position:relative;overflow:hidden">'+
+    '<div style="padding:18px 16px;font-size:19px;font-weight:800;border-bottom:1px solid #ECE4DC">Tu carrito · 2</div>'+
+    '<div style="padding:16px;background:#FBF8F5"><div style="font-size:15px;font-weight:800">Añade 1 producto más y consigue un -30 %</div><div style="font-size:12px;color:#5A5148;margin-top:2px">Ahora tienes -25 % en todo el carrito</div><div style="height:8px;background:#ECE4DC;border-radius:999px;margin:14px 0 8px"><div style="width:66%;height:8px;background:#C5282F;border-radius:999px"></div></div><div style="display:flex;justify-content:space-between;font-size:11px;font-weight:700"><span>1 ud · -20 %</span><span>2 uds · -25 %</span><span style="color:#5A5148">3 uds · -30 %</span></div></div>'+
+    ['BB Body Bronzing|#F1E3DF','Retinol|#F1EAE3'].map(function(x){var p=x.split('|');return '<div style="display:flex;gap:12px;padding:16px"><div style="width:84px;height:84px;border-radius:16px;background:'+p[1]+'"></div><div style="flex:1"><div style="font-size:15px;font-weight:800">'+p[0]+'</div><div style="font-size:12px;color:#466D69;font-weight:600;margin-top:4px">-25 % aplicado</div><div style="text-align:right;font-size:16px;font-weight:800;margin-top:14px">26,25 € <span style="font-size:12px;color:#6E655C;text-decoration:line-through;font-weight:500">35,00 €</span></div></div></div>';}).join('')+
+    '<div style="margin:0 16px;background:#E7EFEC;border-radius:18px;padding:16px"><div style="font-size:14px;font-weight:800;color:#2F4A47">Con 1 más pasas al -30 %</div><div style="display:flex;gap:10px;align-items:center;background:#fff;border-radius:14px;padding:10px;margin-top:12px"><div style="width:52px;height:52px;border-radius:12px;background:#F1EAE3"></div><div style="flex:1;font-size:14px;font-weight:700">Vitamina C</div><div style="background:#14191F;color:#fff;border-radius:999px;padding:10px 14px;font-size:12px;font-weight:700">Añadir</div></div></div>'+
+    '<div style="margin:16px;border:1px dashed #B5A394;border-radius:16px;padding:14px;font-size:14px;font-weight:800">Regalo: tarjeta -15 % para Navidad</div>'+
+    '<div style="position:absolute;left:0;right:0;bottom:0;border-top:1px solid #ECE4DC;padding:16px;background:#fff"><div style="display:flex;justify-content:space-between;font-size:14px;color:#C5282F;font-weight:700"><span>Black Friday -25 %</span><span>-17,50 €</span></div><div style="display:flex;justify-content:space-between;font-size:20px;font-weight:800;margin-top:6px"><span>Total</span><span>52,50 €</span></div><div style="font-size:12px;color:#466D69;font-weight:600;margin-top:4px">Con 1 más ahorrarías 31,50 €</div><div style="background:#C5282F;color:#fff;border-radius:999px;text-align:center;padding:16px;font-weight:700;margin-top:12px">Finalizar compra</div></div></div>';
+
+  function fit(){ ['sc-desk','sc-mob','sc-cart'].forEach(function(id){ var s=document.getElementById(id), w=+s.dataset.w, h=+s.dataset.h, k=s.clientWidth/w; s.style.height=Math.round(h*k)+'px'; s.firstElementChild.style.transform='scale('+k+')'; }); }
+  window.addEventListener('resize',fit); fit();
+
+})();
+</script>
+</body>
+</html>
